@@ -3,7 +3,8 @@
 [![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
 [![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
 
-Odoo
+Odoo (Version 13.0)
+![image](https://user-images.githubusercontent.com/70555316/193114000-ce8c1bc3-e976-4a35-9e47-ed3c1341c6c4.png)
 ----
 
 Odoo is a suite of web based open source business apps.
