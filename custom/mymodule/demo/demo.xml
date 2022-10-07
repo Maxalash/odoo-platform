@@ -1,5 +1,22 @@
 <odoo>
-    <data>
+  <record model="openacademy.course" id="course0">
+    <field name="name">Programming Fundamentals</field>
+    <field name="description">Course teaches fundamentals of programming in C++.
+    </field>
+</record>
+<record model="openacademy.course" id="course1">
+    <field name="name">Object Oriented Programming</field>
+</record>
+<record model="openacademy.course" id="course2">
+    <field name="name">Algorithms and Data Structures</field>
+    <field name="description">
+      Big O notation, 
+      searching algorithms, 
+      storing algorithms,
+      design patterns.
+    </field>
+</record>
+    <!-- <data> -->
 <!--
           <record id="object0" model="mymodule.mymodule">
             <field name="name">Object 0</field>
@@ -26,5 +43,5 @@
             <field name="value">40</field>
           </record>
 -->
-    </data>
+    <!-- </data> -->
 </odoo>
