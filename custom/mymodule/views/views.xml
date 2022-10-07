@@ -3,70 +3,12 @@
     <field name="name">Courses</field>
     <field name="res_model">openacademy.course</field>
     <field name="view_mode">tree,form</field>
-    <field name="context" eval="{'search_default_my_courses': 1}"/>
+    <!-- <field name="context" eval="{'search_default_my_courses': 1}"/>
     <field name="help" type="html">
         <p class="o_view_nocontent_smiling_face">Create the first course
         </p>
-    </field>
+    </field> -->
 </record>
-<menuitem id="courses_menu" name="Courses" parent="openacademy_menu"
+<menuitem id="courses_menu" name="Courses"  parent="menu_root"
                   action="course_list_action"/>
-  <!-- <data> -->
-    <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="mymodule.list">
-      <field name="name">mymodule list</field>
-      <field name="model">mymodule.mymodule</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
--->
-
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="mymodule.action_window">
-      <field name="name">mymodule window</field>
-      <field name="res_model">mymodule.mymodule</field>
-      <field name="view_mode">tree,form</field>
-    </record>
--->
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="mymodule.action_server">
-      <field name="name">mymodule server</field>
-      <field name="model_id" ref="model_mymodule_mymodule"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
-
-    <!-- Top menu item -->
-<!--
-    <menuitem name="mymodule" id="mymodule.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="mymodule.menu_1" parent="mymodule.menu_root"/>
-    <menuitem name="Menu 2" id="mymodule.menu_2" parent="mymodule.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="mymodule.menu_1_list" parent="mymodule.menu_1"
-              action="mymodule.action_window"/>
-    <menuitem name="Server to list" id="mymodule" parent="mymodule.menu_2"
-              action="mymodule.action_server"/>
--->
-  <!-- </data> -->
 </odoo>

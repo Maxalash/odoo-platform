@@ -9,8 +9,3 @@ class Course(models.Model):
 
     name = fields.Char(string ='title', required=True)
     description = fields.Text()
-
-    @api.depends('value')
-    def _value_pc(self):
-        for record in self:
-            record.value2 = float(record.value) / 100
