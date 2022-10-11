@@ -1,19 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <record model="openacademy.course" id="course0">
-    <field name="name">Programming Fundamentals</field>
-    <field name="description">Course teaches fundamentals of programming in C++.
+    <data noupdate="1">
+        <record model="openacademy.course" id="0">
+            <field name="name">Programming Fundamentals</field>
+            <field name="description">Course teaches fundamentals of programming in C++.
     </field>
-</record>
-<record model="openacademy.course" id="course1">
-    <field name="name">Object Oriented Programming</field>
-</record>
-<record model="openacademy.course" id="course2">
-    <field name="name">Algorithms and Data Structures</field>
-    <field name="description">
-      Big O notation, 
-      searching algorithms, 
-      storing algorithms,
-      design patterns.
+            <field name="state">on_going</field>
+        </record>
+        <record model="openacademy.course" id="1">
+            <field name="name">Object Oriented Programming</field>
+            <field name="state">on_going</field>
+        </record>
+        <record model="openacademy.course" id="2">
+            <field name="name">Algorithms and Data Structures</field>
+            <field name="description">
+Big O notation, 
+searching algorithms, 
+storing algorithms,
+design patterns.
     </field>
-</record>
+            <field name="state">on_going</field>
+            <field name="fastcsers" />
+        </record>
+
+    </data>
 </odoo>

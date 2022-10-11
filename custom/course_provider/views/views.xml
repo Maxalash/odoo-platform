@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo><record id="course_tree" model="ir.ui.view">
+  <field name="name">openacademy.instructor.tree</field>
+  <field name="model">openacademy.instructor</field>
+  <field name="arch" type="xml">
+      <tree>
+          <field name="name" />
+          <field name="note" />
+      </tree>
+  </field>
+</record>
+
+<record id="course_form" model="ir.ui.view">
+  <field name="name">openacademy.instructor.form</field>
+  <field name="model">openacademy.instructor</field>
+  <field name="arch" type="xml">
+      <form>
+          <sheet>
+              <group>
+                  <group>
+                      <field name="name" />
+                      <field name="age" />
+                      <field name="gender" />
+                  </group>
+                  <group>
+                      <field name="note" />
+                  </group>
+                  <field name="image" widget='image' class="oe_avatar" />
+              </group>
+          </sheet>
+      </form>
+  </field>
+</record>
+
+<record id="course_dashboard" model="ir.ui.view">
+  <field name="name">openacademy.instructor.kanban</field>
+  <field name="model">openacademy.instructor</field>
+  <field name="arch" type="xml">
+      <kanban>
+          <field name="image" widget='image' class="oe_avatar" />
+          <templates>
+              <t t-name="kanban-box">
+                  <div>
+
+                      <field name="image" widget='image' class="oe_avatar" />
+                      <ul>
+                          <li t-if="record.name.raw_value">
+                              <field name="name" />
+                          </li>
+                          <li t-if="record.age.raw_value">
+                              <field name="age" />
+                              <field name="gender" />
+                          </li>
+                          <li t-if="record.note.raw_value">
+                              <field name="note" />
+                          </li>
+                      </ul>
+                  </div>
+              </t>
+          </templates>
+      </kanban>
+  </field>
+</record>
+
+<record model="ir.actions.act_window" id="instructor_list_action">
+  <field name="name">Instructors</field>
+  <field name="res_model">openacademy.instructor</field>
+  <field name="view_mode">kanban,tree,form</field>
+  <field name="help" type="html">
+      <p>
+  Create instructor
+</p>
+  </field>
+</record>
+
+
+<menuitem id="main_openacademy_menu" name="Instructors" web_icon="static/icon.png" />
+<!-- <menuitem id="openacademy_menu" name="Open Academy" parent="main_openacademy_menu" /> -->
+<menuitem id="instructors_menu" name="Instructors" parent="main_openacademy_menu" action="instructor_list_action" />
+
+
+</odoo>

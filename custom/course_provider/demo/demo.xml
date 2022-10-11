@@ -1,0 +1,21 @@
+<odoo>
+  <data>
+    <record model="openacademy.instructor" id="3">
+      <field name="name">Paul Walker</field>
+      <field name="age">25</field>
+      <field name="gender">male</field>
+    </record>
+    <record model="openacademy.instructor" id="4">
+      <field name="name">Johny Depp</field>
+      <field name="age">34</field>
+      <field name="gender">male</field>
+      <field name="note">Yeah, Iam good teacher ;)</field>
+    </record>
+    <record model="openacademy.instructor" id="5">
+      <field name="name">Adam Sendler</field>
+      <field name="age">27</field>
+      <field name="gender">male</field>
+    </record>
+
+  </data>
+</odoo>
